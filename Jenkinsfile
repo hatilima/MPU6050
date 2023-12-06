@@ -1,17 +1,17 @@
 pipeline{
     agent any
     stages{
-        stage('system_config'){
+        stage('System Config'){
             steps{
                 sh 'make --version'
             }
         }
-        stage('build'){
+        stage('Build'){
             steps{
                 sh 'make'
             }
         }
-        stage('integration_tests'){
+        stage('Integration Tests'){
             steps{
                 sh 'python --version'
             }
